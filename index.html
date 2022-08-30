@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>my portfolio</title>
+  </head>
+  <body class="bg-slate-500">
+    <!-- header start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex z-10 items-center"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative py-4">
+          <!-- left side -->
+          <div class="px-4 items-center">
+            <a
+              href="#"
+              class="text-cyan font-semibold font-mono block text-lg ts-dark"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-intersect"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5zm6-8V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2V6a2 2 0 0 1 2-2h5z"
+                /></svg
+            ></a>
+          </div>
+          <!-- right side -->
+          <div class="flex items-center">
+            <button
+              id="humberger"
+              name="humberger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="humb transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span class="humb transition duration-300 ease-in-out"></span>
+              <span
+                class="humb transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute right-1 bg-cyan max-w-[250px] w-full rounded-lg top-full shadow-sm lg:block lg:static lg:bg-transparent lg:max-w-full text-white"
+            >
+              <ul class="block lg:flex">
+                <!-- link home -->
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
+                    >home</a
+                  >
+                </li>
+                <!-- link about -->
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
+                    >about me</a
+                  >
+                </li>
+                <!-- link portfolio -->
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
+                    >portfolio</a
+                  >
+                </li>
+                <!-- link clients -->
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
+                    >clients</a
+                  >
+                </li>
+                <!-- link blog -->
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
+                    >blog</a
+                  >
+                </li>
+                <!-- <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
+                    >contact</a
+                  >
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section id="home" class="pt-16">
+      <div class="container text-dark mx-auto">
+        <div class="flex flex-wrap">
+          <div
+            class="w-full self-center text-center text-slate-300 md:w-1/2 md:text-start m-auto"
+          >
+            <h1 class="capitalize font-semibold md:text-2xl">my name is</h1>
+            <h2 class="text-cyan uppercase text-4xl md:text-5xl font-serif ts">
+              daan bintang
+            </h2>
+            <h2 class="font-semibold capitalize my-5 md:text-2xl">
+              welcome to my
+              <span
+                class="text-cyan uppercase text-2xl md:text-4xl font-serif ts"
+                >portfolio</span
+              >
+            </h2>
+            <p class="capitalize font-medium mb-6">
+              learning making website with
+              <span
+                class="text-cyan uppercase font-semibold md:text-2xl font-serif ts"
+                >tailwindcss</span
+              >
+            </p>
+            <!-- button -->
+            <a
+              href="#contact"
+              class="font-base bg-cyan rounded-full px-8 py-3 text-white capitalize hover:shadow-lg hover:bg-teal-400 transition duration-300 ease-in-out"
+              >contact me</a
+            >
+          </div>
+          <!-- aside -->
+          <div class="w-full self-end md:w-1/2 mx-auto">
+            <div class="md:mt-0 lg:right-0 relative">
+              <img src="image/hero.png" alt="" class="max-w-full m-auto" />
+              <!-- bubble -->
+              <span class="">
+                <svg
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute -bottom-10 -z-10 sm:-bottom-36 md:-bottom-10 :-bottom-24"
+                >
+                  <path
+                    fill="#06b6d4"
+                    d="M44.9,-55C50.3,-39.6,41.3,-19.8,41.4,0C41.4,19.9,50.5,39.7,45.1,40.7C39.7,41.7,19.9,23.9,7.5,16.3C-4.8,8.8,-9.5,11.5,-22.1,10.5C-34.7,9.5,-55.1,4.8,-64.1,-9C-73.1,-22.8,-70.7,-45.6,-58.2,-61.1C-45.6,-76.6,-22.8,-84.8,-1.5,-83.3C19.8,-81.7,39.6,-70.5,44.9,-55Z"
+                    transform="translate(100 100) scale(1.2)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- About section start -->
+    <section id="about" class="pt-14">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- left side -->
+          <div class="w-full px-4 lg:w-1/2 items-center">
+            <h1 class="font-bold uppercase text-cyan my-3 md:text-2xl ts-dark">
+              about me
+            </h1>
+            <h2
+              class="mb-3 font-semibold text-2xl md:text-3xl max-w-xl capitalize text-slate-300"
+            >
+              let me introduce myself
+            </h2>
+            <p class="text-slate-300">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+              deleniti ducimus delectus assumenda quis aliquid suscipit. Lorem
+              ipsum dolor, sit amet consectetur adipisicing elit. Cum itaque,
+              saepe delectus aut, voluptatibus vel iure minima porro laboriosam
+              quisquam fugit necessitatibus ducimus eius odit nemo nulla
+              eligendi! Ipsam, provident.
+            </p>
+          </div>
+          <!-- right side -->
+          <div class="w-full px-4 lg:w-1/2 items-center">
+            <h3 class="font-bold uppercase text-cyan my-3 md:text-2xl ts-dark">
+              let's get to know me better
+            </h3>
+            <p class="text-slate-300">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusantium itaque eaque laboriosam illum exercitationem deleniti
+              molestias illo eos fugit. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Facere dolore tenetur cupiditate aut aliquid!
+              Cupiditate voluptatibus magnam perspiciatis laboriosam adipisci
+              sit eum accusantium, nesciunt praesentium, tempora, inventore unde
+              consectetur voluptatem!
+            </p>
+            <!-- social media -->
+            <h5 class="capitalize my-3 text-cyan font-bold ts-dark">
+              follow my social media :
+            </h5>
+            <div
+              class="flex mb-6"
+            >
+              <!-- github -->
+              <a
+                href="https://github.com/daanbintang"
+                target="_blank"
+                class="w-9 h-9 flex justify-center items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  /></svg
+              ></a>
+              <!-- TWITTER -->
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="w-9 h-9 mx-10 flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="#0ea5e9"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="w-9 h-9 flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="#b91c1c"
+                  class="bi bi-youtube"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- portfolio section start -->
+    <section id="portfolio" class="py-14 bg-slate-600">
+      <div class="container">
+        <!-- head -->
+        <div class="w-full px-4 pb-2">
+          <div class="mx-auto sm:text-center">
+            <h4
+              class="uppercase text-slate-300 font-bold ts-dark text-lg text-center sm:text-startrounded-full sm:px-10 mb-10 shadow-lg"
+            >
+              portfolio
+            </h4>
+            <h3
+              class="font-bold capitalize text-3xl sm:text-4xl lg:text-5xl my-3 text-cyan"
+            >
+              new projects
+            </h3>
+            <p class="text-slate-300 md:text-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur, temporibus velit? Temporibus fuga inventore
+              voluptatum iste voluptatem magni unde voluptatibus recusandae!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+              vitae deserunt dolorem! Autem atque, facere at itaque et eligendi
+              dolore.
+            </p>
+          </div>
+        </div>
+        <!-- content -->
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <!-- web 1 -->
+          <div class="p-2 mb-7 md:w-1/2">
+            <h3
+              class="text-orange-400 font-bold ts-dark text-xl my-2 capitalize"
+            >
+              webiste only html css
+            </h3>
+            <p class="text-slate-300 capitalize mb-2">
+              my first project to make a website using only html and css
+              <a
+                href="https://daanbintang.github.io/"
+                target="_blank"
+                class="text-orange-400 underline hover:text-white"
+                >see this website</a
+              >
+            </p>
+            <div
+              class="rounded-md shadow-md overflow-hidden group hover:scale-95 transition duration-300"
+            >
+              <img
+                src="image/web1.png"
+                alt=""
+                class="group-hover:brightness-50 group-hover:scale-110 transition-all duration-300"
+                width="w-full"
+              />
+            </div>
+          </div>
+          <!-- web 2 -->
+          <div class="p-2 mb-7 md:w-1/2">
+            <h3 class="text-sky-600 font-bold ts-dark text-xl my-2 capitalize">
+              website with bootstrap 5
+            </h3>
+            <p class="text-slate-300 capitalize mb-2">
+              trying to make a website with library css bootstrap 5
+              <a
+                href="https://daanbintang.github.io/portfolio2/"
+                target="_blank"
+                class="text-sky-400 underline hover:text-white"
+                >see this webiste</a
+              >
+            </p>
+            <div
+              class="rounded-md shadow-md overflow-hidden group hover:scale-95 transition duration-300"
+            >
+              <img
+                src="image/web2.png"
+                alt=""
+                class="group-hover:brightness-50 group-hover:scale-110 transition-all duration-300"
+                width="w-full"
+              />
+            </div>
+          </div>
+          <!-- web 3 -->
+          <div class="p-2 mb-7 md:w-1/2">
+            <h3 class="text-cyan font-bold ts-dark text-xl my-2 capitalize">
+              simple website with bootstrap 5
+            </h3>
+            <p class="text-slate-300 capitalize mb-2">
+              practice making a website with bootstrap 5
+              <a
+                href="https://daanbintang.github.io/portfolio3/"
+                target="_blank"
+                class="text-cyan underline hover:text-purple-400"
+                >see this website</a
+              >
+            </p>
+            <div
+              class="rounded-md shadow-md overflow-hidden group hover:scale-95 transition duration-300"
+            >
+              <img
+                src="image/web3.png"
+                alt=""
+                class="group-hover:brightness-50 group-hover:scale-110 transition-all duration-300"
+                width="w-full"
+              />
+            </div>
+          </div>
+          <!-- web 4 -->
+          <div class="p-2 mb-7 md:w-1/2">
+            <h3 class="text-sky-600 font-bold ts-dark text-xl my-2 capitalize">
+              first time trying bootstrap 5
+            </h3>
+            <p class="text-slate-300 capitalize mb-2">
+              my first project to make a website using only html and css
+            </p>
+            <div
+              class="rounded-md shadow-md overflow-hidden group hover:scale-95 transition duration-300"
+            >
+              <img
+                src="image/web4.png"
+                alt=""
+                class="group-hover:brightness-50 group-hover:scale-110 transition-all duration-300"
+                width="w-full"
+              />
+            </div>
+          </div>
+          <!-- web 5 -->
+          <div class="p-2 mb-7 md:w-1/2">
+            <h3
+              class="text-purple-600 font-bold ts-dark text-xl my-2 capitalize"
+            >
+              while learning css
+            </h3>
+            <p class="text-slate-300 capitalize mb-2">
+              my first project to make a website using only html and css
+            </p>
+            <div
+              class="rounded-md shadow-md overflow-hidden group hover:scale-95 transition duration-300"
+            >
+              <img
+                src="image/web5.png"
+                alt=""
+                class="group-hover:brightness-50 group-hover:scale-110 transition-all duration-300"
+                width="w-full"
+              />
+            </div>
+          </div>
+          <!-- web 6 -->
+          <div class="p-2 mb-7 md:w-1/2">
+            <h3
+              class="text-orange-500 font-bold ts-dark text-xl my-2 capitalize"
+            >
+              trying javascript
+            </h3>
+            <p class="text-slate-300 capitalize mb-2">
+              make a calculator with javascript <a href="https://daanbintang.github.io/calculator/" class="text-orange-400 underline ">see this website</a>
+            </p>
+            <div
+              class="rounded-md shadow-md overflow-hidden group hover:scale-95 transition duration-300"
+            >
+              <img
+                src="image/web6.png"
+                alt=""
+                class="group-hover:brightness-50 group-hover:scale-110 transition-all duration-300"
+                width="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- clients section start -->
+    <section id="clients" class="bg-slate-800 py-14">
+      <div class="container">
+        <!-- head -->
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center">
+            <h4
+              class="text-slate-300 mb-10 text-xl font-semibold ts-dark uppercase my-2 shadow-lg"
+            >
+              clients
+            </h4>
+            <h2
+              class="capitalize text-cyan text-3xl sm:text-4xl lg:text-5xl font-bold mb-3"
+            >
+              have worked with
+            </h2>
+            <p class="text-slate-300 md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              maxime voluptates necessitatibus earum odit
+            </p>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="w-full px-4 mt-4">
+          <div class="flex flex-wrap justify-center items-center">
+            <!-- gojek icon -->
+            <a
+              href="#"
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-300"
+            >
+              <img src="image/clients/Gojek.png" alt="" />
+            </a>
+            <!-- goggle icon -->
+            <a
+              href="#"
+              class="max-w-[90px] mx-7 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-300"
+            >
+              <img src="image/clients/google.png" alt="" />
+            </a>
+            <!-- grab icon -->
+            <a
+              href="#"
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-300"
+            >
+              <img src="image/clients/grab.png" alt="" />
+            </a>
+            <!-- traveloka icon -->
+            <a
+              href="#"
+              class="max-w-[130px] mx-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-300"
+            >
+              <img src="image/clients/Traveloka.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- clients section end -->
+
+    <!-- blog section start -->
+    <section id="blog" class="py-14 bg-slate-600">
+      <div class="container">
+        <!-- head -->
+        <div class="w-full mx-4">
+          <div class="mx-auto sm:text-center">
+            <h4
+              class="uppercase text-slate-400 font-bold ts-dark text-lg text-center mb-10 shadow-lg lg:text-2xl"
+            >
+              blog
+            </h4>
+            <h3
+              class="font-bold capitalize text-3xl sm:text-4xl lg:text-5xl my-3 text-cyan"
+            >
+              recent posts
+            </h3>
+            <p class="text-slate-300 md:text-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              pariatur fugiat aut, est itaque magnam id voluptates doloremque
+              repellat atque deserunt animi vero maxime at corrupti magni
+              ducimus ipsum quaerat.
+            </p>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="flex flex-wrap mt-9 justify-between items-center">
+          <div class="w-full px-4 lg:w-1/3  mb-5">
+            <div class="bg-slate-300 rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://source.unsplash.com/360x200?code"
+                alt=""
+                class="w-full"
+              />
+              <div class="mt-2 p-5">
+                <h2 class="font-bold capitalize px-1 mb-2">
+                  tips and tricks programming
+                </h2>
+                <p class="font-semibold">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat blanditiis eius aliquid voluptatum velit soluta
+                  labore illum aut odit eaque magni expedita, eveniet voluptatem
+                  iste! Sit illum cumque veniam laborum?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/3  mb-5">
+            <div class="bg-slate-300 rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://source.unsplash.com/360x200?code"
+                alt=""
+                class="w-full"
+              />
+              <div class="mt-2 p-5">
+                <h2 class="font-bold capitalize px-1 mb-2">
+                  tips and tricks programming
+                </h2>
+                <p class="font-semibold">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat blanditiis eius aliquid voluptatum velit soluta
+                  labore illum aut odit eaque magni expedita, eveniet voluptatem
+                  iste! Sit illum cumque veniam laborum?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/3  mb-5">
+            <div class="bg-slate-300 rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://source.unsplash.com/360x200?code"
+                alt=""
+                class="w-full"
+              />
+              <div class="mt-2 p-5">
+                <h2 class="font-bold capitalize px-1 mb-2">
+                  tips and tricks programming
+                </h2>
+                <p class="font-semibold">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat blanditiis eius aliquid voluptatum velit soluta
+                  labore illum aut odit eaque magni expedita, eveniet voluptatem
+                  iste! Sit illum cumque veniam laborum?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- contact section start -->
+    <section id="contact" class="py-14 bg-slate-900">
+      <div class="container">
+        <!-- head -->
+        <div class="w-full mx-4">
+          <div class="mx-auto sm:text-center">
+            <h4
+              class="uppercase text-slate-400 font-bold ts-dark text-lg text-center mb-10 shadow-lg lg:text-2xl"
+            >
+              contact
+            </h4>
+            <h3
+              class="font-bold capitalize text-3xl sm:text-4xl lg:text-5xl my-3 text-cyan"
+            >
+              contact me
+            </h3>
+            <p class="text-slate-300 md:text-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              pariatur fugiat aut, est itaque magnam id voluptates doloremque
+              repellat atque deserunt animi vero maxime at corrupti magni
+              ducimus ipsum quaerat.
+            </p>
+          </div>
+        </div>
+        <!-- form contact -->
+        <form action="">
+        <div class="w-full lg:w-2/3 lg:mx-auto">
+          <!-- username -->
+          <div class="w-full mb-6 px-4">
+            <label
+              for="name"
+              class="text-cyan text-base font-semibold capitalize p-2"
+              >name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full bg-slate-300 rounded-md focus:outline-none focus:ring-cyan focus:ring-1 focus:border-cyan text-dark"
+            />
+          </div>
+          <!-- username email -->
+          <div class="w-full mb-6 px-4">
+            <label
+              for="mail"
+              class="text-cyan text-base font-semibold capitalize p-2"
+              >email</label
+            >
+            <input
+              type="email"
+              id="mail"
+              class="w-full bg-slate-300 rounded-md focus:outline-none focus:ring-cyan focus:ring-1 focus:border-cyan text-dark"
+            />
+          </div>
+          <!-- password email -->
+          <div class="w-full mb-6 px-4">
+            <label
+              for="password"
+              class="text-cyan text-base font-semibold capitalize p-2"
+              >password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="w-full bg-slate-300 rounded-md focus:outline-none focus:ring-cyan focus:ring-1 focus:border-cyan text-dark"
+            />
+          </div>
+          <!-- message-->
+          <div class="w-full mb-6 px-4">
+            <label
+              for="message"
+              class="text-cyan text-base font-semibold capitalize p-2"
+              >message</label
+            >
+            <textarea name="message" id="message cols="30" rows="10" class="w-full bg-slate-300 rounded-md focus:outline-none focus:ring-cyan focus:ring-1 focus:border-cyan text-dark"></textarea>
+          </div>
+          <!-- button -->
+          <div class="w-full px-4 mb-8">
+          <button type="button" class="bg-cyan px-8 py-2 rounded-full w-full hover:bg-sky-400 text-slate-300">submit</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+    <footer class="bg-gray-800 py-2">
+<div class="container">
+  <div class="flex flex-wrap">
+      <!-- company addres -->
+      <div class="w-full px-1 mb-2 md:w-1/3 text-cyan justify-center">
+        <h1 class="text-lg text-slate-300 uppercase font-semibold mb-4">contact us</h1>
+        <h2 class=" capitalize mb-4">daanbintang@gmail.com</h2>
+        <h3 class=" capitalize mb-4">jl merdeka no 1766</h3>
+      </div>
+      <!-- link to -->
+  <div class="w-full px-1 mb-2 md:w-1/3 text-center">
+    <h1 class="text-lg text-slate-300 uppercase mb-4">tautan</h1>
+    <ul>
+      <li><a href="#home" class="hover-link">home</a></li>
+      <li><a href="#about" class="hover-link">about me</a></li>
+      <li><a href="#portfolio" class="hover-link">my portfolio</a></li>
+      <li><a href="#clients" class="hover-link">clients</a></li>
+      <li><a href="#blog" class="hover-link">blog</a></li>
+      <li><a href="#contact" class="hover-link">contact me</a></li>
+    </ul>
+  </div>
+    <!-- my work -->
+    <div class="w-full px-1 mb-2 md:w-1/3 text-slate-300 text-end">
+    <h1 class="mb-4 text-lg uppercase">my work</h1>
+    <ul>
+      <li><a href="#" class="hover-link">webiste only html css</a></li>
+      <li><a href="#" class="hover-link">website with bootstrap 5</a></li>
+      <li><a href="#" class="hover-link">simple website with bootstrap 5</a></li>
+      <li><a href="#" class="hover-link">first time trying bootstrap 5</a></li>
+      <li><a href="#" class="hover-link">while learning css</a></li>
+      <li><a href="#" class="hover-link">trying javascript</a></li>
+    </ul> 
+    </div>
+    <div class="w-full border-t border-slate-300 mt-10"></div>
+    <!-- footer -->
+    <div class="w-full my-3">
+      <!-- icons -->
+            <div
+              class="flex items-center justify-center"
+            >
+              <!-- github -->
+              <a
+                href="https://github.com/daanbintang"
+                target="_blank"
+                class="w-9 h-9 flex justify-center items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  /></svg
+              ></a>
+              <!-- TWITTER -->
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="w-9 h-9 mx-10 flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="#0ea5e9"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="w-9 h-9 flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="#b91c1c"
+                  class="bi bi-youtube"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  />
+                </svg>
+              </a>
+            </div>           
+    </div>
+
+  <div class="w-full bg-cyan border-t border-cyan"></div>
+  
+  <!-- copyright -->
+    <p class="text-slate-300  mx-auto mt-1">
+      created by <span>daanbintang</span> using <span>tailwindcss</span>
+    </p>
+  </div>
+</div>
+    </footer>
+    <!-- footer section end -->
+    <!-- javascript -->
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
