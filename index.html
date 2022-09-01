@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,7 @@
     <link href="dist/output.css" rel="stylesheet" />
     <title>my portfolio</title>
   </head>
-  <body class="bg-slate-500">
+  <body class="bg-slate-500 dark:bg-dark"> 
     <!-- header start -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex z-10 items-center"
@@ -92,14 +92,20 @@
                     class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
                     >blog</a
                   >
-                </li>
-                <!-- <li class="group">
-                  <a
-                    href="#contact"
-                    class="text-base py-2 mx-8 group-hover:text-black capitalize flex"
-                    >contact</a
-                  >
-                </li> -->
+               </li>
+                <!-- toggle dark mode -->
+               <li>
+                <div class="flex">
+                  <span class="text-slate-400 text-sm ml-2">light</span>
+                  <input type="checkbox" id="dark-toggle" class="hidden">
+                  <label for="dark-toggle" class="block">
+                    <div class="bg-cyan w-9 h-5 rounded-full p-1">
+                      <div></div>
+                    </div>
+                  </label>
+                  <span class="text-slate-400 text-sm ml-2">dark</span>
+                </div>
+               </li>
               </ul>
             </nav>
           </div>
@@ -788,6 +794,7 @@
 </div>
     </footer>
     <!-- footer section end -->
+
     <!-- javascript -->
     <script src="dist/js/script.js"></script>
   </body>

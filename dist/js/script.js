@@ -15,3 +15,10 @@ humb.addEventListener("click", function () {
   humb.classList.toggle("active");
   nav.classList.toggle("hidden");
 });
+
+window.addEventListener('click', function(e){
+  if(e.target != humb && e.target != nav){
+    humb.classList.remove("active");
+  nav.classList.add("hidden");
+  }
+})
